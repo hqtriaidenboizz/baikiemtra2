@@ -3,8 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\HTTP\Controllers\homeController;
 
-
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,6 +16,8 @@ use App\HTTP\Controllers\homeController;
 
 
 Route::get('/',[homeController::class, 'getHome']);
-Route::get('/detail',[homeController::class, 'getDetail']);
+Route::get('/form',[homeController::class, 'getForm']);
 
-// Route::get("detail/{id}", [ProcessForm::class, 'getDetail']);
+// Route::get('/detail',[homeController::class, 'getDetail']);
+
+Route::get("detail/{id}", [homeController::class, 'getDetail']);

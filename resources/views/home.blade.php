@@ -16,6 +16,30 @@
   box-sizing: border-box;
   
 }
+button{
+
+float: right;
+background-color:#ffc83d;
+border: 1px solid #ffc83d;
+color: #292929;
+padding: 5px 16px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+border-radius: .2rem;
+margin: 0px 10px 0px 0px;
+font-family: poppins,Arial, Helvetica, sans-serif ;
+font-weight: 600;
+transition-duration: 0.4s;
+cursor:pointer;
+}
+button:hover {
+background-color: #292929;
+border: 1px solid #ffc83d; ;
+color: #ffc83d;
+}
+
 
 
 body {
@@ -473,7 +497,7 @@ background: transparent;
           <div class="nav">  
      <ul>
       <li><a href=""> Menu</a></li>
-        <li><a href="https://codepen.io/kjkosta/full/ExbMYRv">Locations</a></li>
+        <li><a href="/form">Form</a></li>
       <li><a href="https://www.indeed.com/jobs?q=YOUR%20BUSINESS%20INDEED%20HERE&l=San%20Francisco%2C%20CA&vjk=cafbdf97e8fc2b75">Jobs</a></li>
        <li><a href="">Contact</a></li>
         <li><a href="https://codepen.io/kjkosta/full/OJQmpqy">About Us</a></li>
@@ -495,7 +519,7 @@ background: transparent;
     
     
     </p>
-    <a href="/detail"><button>Detail</button></a></div>
+    <a href="/detail/{{$restaurant->id}}"><button>Detail</button></a></div>
    @endforeach
 
    </div>
